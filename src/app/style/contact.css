@@ -1,0 +1,140 @@
+
+.contact-Container {
+    max-width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color:var(--main-color);
+    text-align: center;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label {
+    font-size: 1.5rem;
+    color:var(--main-color);
+    text-align: left;
+}
+
+.input, .textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.textarea {
+    height:40vh;
+    resize: vertical;
+}
+
+.button {
+    background-color:var(--main-color);
+    color: #fff;
+    padding: 12px;
+    font-size: 2rem;
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: mediumvioletred;
+}
+
+
+
+@media (max-width: 600px) {
+    .contactContainer {
+        max-width: 100%;
+        margin: 30px auto;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+    .label, .input, .textarea, .button {
+        font-size: 2rem;
+        width: 80%;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-Container {
+        width: 95%;
+        max-width: 100%;
+        margin: 10px ;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .label {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .input,
+    .textarea {
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .textarea {
+        height: 100px;
+        resize: vertical;
+        width: 100%;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        padding: 10px;
+        width: 100%;
+        background-color:var(--main-color); 
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color:mediumvioletred; 
+    }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .contact-Container {
+        max-width: 80%;
+        margin: 30px auto;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .label, .input, .textarea, .button {
+        font-size: 1.1rem;
+    }
+}
