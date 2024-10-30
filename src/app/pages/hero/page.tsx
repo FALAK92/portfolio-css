@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <div className="home-section">
             <div className="home-img">
-               <Image src={"/girl1.png"} alt='girl' width={"600"} height={"600"}></Image>
+               <Image src="/girl1.png" alt="girl" width={600} height={600}></Image>
             </div>
             <div className="home-content">
                 <h1>Hi, It's <span>Falak</span></h1>
@@ -21,10 +21,10 @@ const Hero = () => {
                     bring ideas to life with code.
                 </p>
                 <div className="social-icons">
-                    <Link href="https://linkedin.com/in/falak-naaz-447371262">
+                    <Link href="https://linkedin.com/in/falak-naaz-447371262" target="blank" rel="noopener noeferrer">
                     <AiFillLinkedin />
                     </Link>
-                    <Link href="https://github.com/FALAK92">
+                    <Link href="https://github.com/FALAK92" target="blank" rel="noopener noeferrer">
                     <AiFillGithub />
 
                     </Link>

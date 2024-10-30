@@ -8,10 +8,10 @@ const About = () => {
       <div className="card">
         <Image
           className="pic"
-          src={"/girl2.avif"}
+          src="/girl2.avif"
           alt="mypic"
-          width={"250"}
-          height={"250"}
+          width={250}
+          height={250}
         ></Image>
         <h1>About me</h1>
         <p>
