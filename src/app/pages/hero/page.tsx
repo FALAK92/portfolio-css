@@ -16,10 +16,10 @@ const Hero = () => {
       </div>
       <div className="home-content">
         <h1>
-          Hi, It's <span>Falak</span>
+          Hi, It&apos;s <span>Falak</span>
         </h1>
         <h3 className="text-animation">
-          I'm a <span></span>
+          I&apos;m a <span></span>
         </h3>
         <p>
           Build, Create, Innovate. As a web developer, I craft dynamic digital

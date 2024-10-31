@@ -1,4 +1,3 @@
-import Link from "next/link";
 import "@/app/style/about.css";
 import Image from "next/image";
 
@@ -15,11 +14,11 @@ const About = () => {
         ></Image>
         <h1>About me</h1>
         <p>
-          "I am a dedicated teacher currently studying at GIAIC, driven by a
+        &quot;I am a dedicated teacher currently studying at GIAIC, driven by a
           strong passion for learning and career development. With a commitment
           to nurturing knowledge and expanding my skills, I seek to make a
           positive impact in my field and continuously grow both personally and
-          professionally."
+          professionally.&quot;
         </p>
       </div>
     </div>
