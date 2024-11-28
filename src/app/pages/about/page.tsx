@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
+    <section id = "about" className="section">
     <div className="about-container">
       <div className="card">
         <Image
@@ -22,6 +23,7 @@ const About = () => {
         </p>
       </div>
     </div>
+    </section>
   );
 };
 

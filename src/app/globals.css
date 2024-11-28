@@ -18,6 +18,9 @@
     background: var(--bg-color);
     color: var(--text-color);
   }
+  html{
+    scroll-behavior: smooth;
+  }
   
  
   

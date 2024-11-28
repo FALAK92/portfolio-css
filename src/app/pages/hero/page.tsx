@@ -10,6 +10,7 @@ import {
 
 const Hero = () => {
   return (
+    <section id="home" className="section">
     <div className="home-section">
       <div className="home-img">
         <Image src="/girl1.png" alt="girl" width={600} height={600}></Image>
@@ -53,6 +54,7 @@ const Hero = () => {
         </Link>
       </div>
     </div>
+    </section>
   );
 };
 

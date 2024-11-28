@@ -9,7 +9,13 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
+
+    if (!isMenuOpen) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
   };
 
   return (
@@ -20,21 +26,31 @@ export default function Header() {
         </h3>
       </div>
       <nav className="navbar">
-        <FaBars className="hamburger-icon" onClick={toggleMenu} />
-
-        <ul className={`menu ${isMenuOpen ? "show" : ""}`}>
+        <FaBars
+          className="hamburger-icon"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
+          aria-controls="menu"
+          tabIndex={0}
+          aria-label="Toggle menu"
+        />
+        <ul
+          id="menu"
+          className={`menu ${isMenuOpen ? "show" : ""}`}
+          aria-hidden={!isMenuOpen}
+        >
           <li>
-            <Link href={"/"}>Home</Link>
+            <Link href="#home">Home</Link>
           </li>
           <li>
-            <Link href={"/"}>About</Link>
+            <Link href="#about">About</Link>
           </li>
           <li>
-            {" "}
-            <Link href={"/"}>Contact</Link>
+            <Link href="#contact">Contact</Link>
           </li>
         </ul>
       </nav>
     </header>
   );
 }
+
