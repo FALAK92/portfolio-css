@@ -1,6 +1,6 @@
 .section {
   padding: 100px 20px;
-  min-height: 100vh; 
+  height: 100vh; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,14 +278,14 @@ span {
   }
 
   .home-img {
-    width: 80%; 
+    width: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .home-img img {
-    width: 90%; 
+    width: 100%; 
     height: auto; 
     max-width: 300px; 
     margin-top: 60px;

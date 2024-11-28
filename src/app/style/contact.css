@@ -1,21 +1,19 @@
 
 .contact-Container {
-    max-width: 50%;
-    margin: 40px auto;
+    max-width: 100%;
+    margin: 10px auto;
     text-align: center;
 }
 
 .heading {
     font-size: 4rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
     color:var(--main-color);
     text-align: center;
 
 }
 .section {
     padding: 100px 20px;
-    height: 100vh; 
+    height: 50vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,6 +127,12 @@
     .button:hover {
         background-color:mediumvioletred; 
     }
+    .section {
+        padding: 50px 10px; /* Padding ko kam kar diya */
+        height: auto; /* Height ko automatic adjust kar diya */
+        text-align: left; /* Text ko left-align kar diya */
+      }
+    
 }
 
 
@@ -136,7 +140,7 @@
 @media (min-width: 601px) and (max-width: 992px) {
     .contact-Container {
         max-width: 80%;
-        margin: 30px auto;
+        margin: 10px auto;
     }
 
     .heading {
